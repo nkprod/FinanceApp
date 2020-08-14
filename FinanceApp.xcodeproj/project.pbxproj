@@ -3,29 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1524E70E3500ABB112 /* APIHandler.swift */; };
 		7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CC24DDC030006F1824 /* AppDelegate.swift */; };
 		7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */; };
-		7F91C4D124DDC030006F1824 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D024DDC030006F1824 /* ViewController.swift */; };
+		7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D024DDC030006F1824 /* StockViewController.swift */; };
 		7F91C4D424DDC030006F1824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D224DDC030006F1824 /* Main.storyboard */; };
 		7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D524DDC030006F1824 /* FinanceApp.xcdatamodeld */; };
 		7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D824DDC033006F1824 /* Assets.xcassets */; };
 		7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */; };
+		7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E524DDC32D006F1824 /* ViewModel.swift */; };
+		7F91C4E824DDC586006F1824 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E724DDC586006F1824 /* Stock.swift */; };
+		7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */; };
+		E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F69EA1524E70E3500ABB112 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = /Users/nulrybekkarshyga/Desktop/SwiftApplications/FinanceApp/FinanceApp/Nurlybek/APIHandler.swift; sourceTree = "<absolute>"; };
 		7F91C4C924DDC030006F1824 /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F91C4CC24DDC030006F1824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F91C4D024DDC030006F1824 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F91C4D024DDC030006F1824 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
 		7F91C4D324DDC030006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F91C4D624DDC030006F1824 /* FinanceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceApp.xcdatamodel; sourceTree = "<group>"; };
 		7F91C4D824DDC033006F1824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F91C4DB24DDC033006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F91C4DD24DDC033006F1824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F91C4E524DDC32D006F1824 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7F91C4E724DDC586006F1824 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
+		C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				7F91C4CB24DDC030006F1824 /* FinanceApp */,
 				7F91C4CA24DDC030006F1824 /* Products */,
+				908DE7DEB5A1FEFE4DE3DECB /* Pods */,
+				9F3EF68EF56C4B231EC857FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +75,7 @@
 			children = (
 				7F91C4CC24DDC030006F1824 /* AppDelegate.swift */,
 				7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */,
-				7F91C4D024DDC030006F1824 /* ViewController.swift */,
+				7FABA75B24E707B900B853D4 /* Nurlybek */,
 				7F91C4D224DDC030006F1824 /* Main.storyboard */,
 				7F91C4D824DDC033006F1824 /* Assets.xcassets */,
 				7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */,
@@ -70,6 +85,35 @@
 			path = FinanceApp;
 			sourceTree = "<group>";
 		};
+		7FABA75B24E707B900B853D4 /* Nurlybek */ = {
+			isa = PBXGroup;
+			children = (
+				7F91C4D024DDC030006F1824 /* StockViewController.swift */,
+				7F69EA1524E70E3500ABB112 /* APIHandler.swift */,
+				7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */,
+				7F91C4E524DDC32D006F1824 /* ViewModel.swift */,
+				7F91C4E724DDC586006F1824 /* Stock.swift */,
+			);
+			path = Nurlybek;
+			sourceTree = "<group>";
+		};
+		908DE7DEB5A1FEFE4DE3DECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */,
+				8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F3EF68EF56C4B231EC857FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F91C4E024DDC033006F1824 /* Build configuration list for PBXNativeTarget "FinanceApp" */;
 			buildPhases = (
+				A251654A7CFD20E082FACE0E /* [CP] Check Pods Manifest.lock */,
 				7F91C4C524DDC030006F1824 /* Sources */,
 				7F91C4C624DDC030006F1824 /* Frameworks */,
 				7F91C4C724DDC030006F1824 /* Resources */,
+				3F3707EEAB387304C083D578 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +182,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F3707EEAB387304C083D578 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A251654A7CFD20E082FACE0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F91C4C524DDC030006F1824 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */,
-				7F91C4D124DDC030006F1824 /* ViewController.swift in Sources */,
+				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
+				7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */,
+				7F91C4E824DDC586006F1824 /* Stock.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
+				7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */,
+				7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */,
 				7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +378,7 @@
 		};
 		7F91C4E124DDC033006F1824 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +397,7 @@
 		};
 		7F91C4E224DDC033006F1824 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
