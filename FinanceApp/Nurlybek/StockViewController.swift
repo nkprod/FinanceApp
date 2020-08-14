@@ -24,12 +24,12 @@ class StockViewController: UIViewController,UITableViewDelegate {
         super.viewDidLoad()
         yahooTableView.delegate = self
 //        yahooTableView.dataSource = self
-//        vm.getDataRx()
-//        vm.closure = { result in
-//            observer.onNext(results)
-//            //print(self.model?.monthlyTimeSeries)
-//            //self.yahooTableView.reloadData()
-//        }
+        vm.getDataRx()
+        vm.closure = { result in
+            self.dataSource.accept(result!)
+            //print(self.model?.monthlyTimeSeries)
+            //self.yahooTableView.reloadData()
+        }
         dataSource.bind(to: self.yahooTableView.rx.items) { (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! StockTableViewCell
             cell.stockTextLabel?.text = element.metaData.the2Symbol
@@ -38,14 +38,14 @@ class StockViewController: UIViewController,UITableViewDelegate {
         }.disposed(by: disposeBag)
         
 
-        getDataRx().subscribe(onNext: { (arrPostInfo) in
-            self.dataSource.accept(arrPostInfo)
-            
-        }, onError: { (error) in
-            print(error)
-        }, onCompleted: {
-            
-            }).disposed(by: disposeBag)
+//        getDataRx().subscribe(onNext: { (arrPostInfo) in
+//            self.dataSource.accept(arrPostInfo)
+//
+//        }, onError: { (error) in
+//            print(error)
+//        }, onCompleted: {
+//
+//            }).disposed(by: disposeBag)
         // Do any additional setup after loading the view.
     }
     
@@ -67,30 +67,30 @@ class StockViewController: UIViewController,UITableViewDelegate {
         return 300
     }
     
-    func getDataRx() -> Observable<[Stock]> {
-        return Observable<[Stock]>.create { (observer) in
-            
-            let companies = ["AAPL","MSFT","AMZN","SNE","GOOGL",[]]
-            var results = [Stock]()
-            for company in companies {
-                URLSession.shared.dataTask(with: URL(string: "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=\(company)&apikey=BVEFVTU01YXPL88Y")!) {data,response,error in
-                    DispatchQueue.main.async{
-                        
-                        if error == nil {
-                            let postInfoArr = try! JSONDecoder().decode(Stock.self, from: data!)
-                            results.append(postInfoArr)
-                            observer.onNext(results)
-                        } else {
-                            observer.onError(error!)
-                        }
-                    }
-                }.resume()
-            }
-
-            let mydisposable = Disposables.create()
-            return mydisposable
-        }
-    }
+//    func getDataRx() -> Observable<[Stock]> {
+//        return Observable<[Stock]>.create { (observer) in
+//            
+//            let companies = ["AAPL","MSFT","AMZN","SNE","GOOGL"]
+//            var results = [Stock]()
+//            for company in companies {
+//                URLSession.shared.dataTask(with: URL(string: "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=\(company)&apikey=BVEFVTU01YXPL88Y")!) {data,response,error in
+//                    DispatchQueue.main.async{
+//                        
+//                        if error == nil {
+//                            let postInfoArr = try! JSONDecoder().decode(Stock.self, from: data!)
+//                            results.append(postInfoArr)
+//                            observer.onNext(results)
+//                        } else {
+//                            observer.onError(error!)
+//                        }
+//                    }
+//                }.resume()
+//            }
+//
+//            let mydisposable = Disposables.create()
+//            return mydisposable
+//        }
+//    }
     
 
 

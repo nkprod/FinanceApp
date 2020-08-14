@@ -14,26 +14,33 @@ class ViewModel {
     var closure: ((_: [Stock]?)->())?
     
     var apiHandler = APIHandler.init()
-    
+    let disposeBag = DisposeBag()
     var result = [Stock]()
     var error: Error?
     var response: URLResponse?
     
     func getDataRx() {
 
-        apiHandler.getDataRx()
+        apiHandler.getDataRx().subscribe(onNext: { (arrPostInfo) in
+            let result = arrPostInfo
+            self.closure?(result)
+        }, onError: { (error) in
+            print(error)
+        }, onCompleted: {
+            
+            }).disposed(by: disposeBag)
         
-        apiHandler.closure = {(data, response, error) in
-            if error == nil {
-                let postInfoArr = try! JSONDecoder().decode(Stock.self, from: data!)
-                self.result.append(postInfoArr)
-                
-            } else {
-//                observer.onError(error!)
-            }
-            self.response = response
-            self.closure?(self.result)
-        }
+//        apiHandler.closure = {(data, response, error) in
+//            if error == nil {
+//                let postInfoArr = try! JSONDecoder().decode(Stock.self, from: data!)
+//                self.result.append(postInfoArr)
+//                
+//            } else {
+////                observer.onError(error!)
+//            }
+//            self.response = response
+//            self.closure?(self.result)
+//        }
     }
 //    func getCount() -> Int{
 //        return result.count
