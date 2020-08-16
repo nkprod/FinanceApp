@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1524E70E3500ABB112 /* APIHandler.swift */; };
+		7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */; };
 		7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CC24DDC030006F1824 /* AppDelegate.swift */; };
 		7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */; };
 		7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D024DDC030006F1824 /* StockViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69EA1524E70E3500ABB112 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = /Users/nulrybekkarshyga/Desktop/SwiftApplications/FinanceApp/FinanceApp/Nurlybek/APIHandler.swift; sourceTree = "<absolute>"; };
+		7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDetailViewController.swift; sourceTree = "<group>"; };
 		7F91C4C924DDC030006F1824 /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F91C4CC24DDC030006F1824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */,
 				7F91C4E524DDC32D006F1824 /* ViewModel.swift */,
 				7F91C4E724DDC586006F1824 /* Stock.swift */,
+				7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */,
 			);
 			path = Nurlybek;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */,
 				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
+				7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */,
 				7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */,
 				7F91C4E824DDC586006F1824 /* Stock.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
