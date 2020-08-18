@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1524E70E3500ABB112 /* APIHandler.swift */; };
 		7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */; };
+		7F6B96E624EBF882008024C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B96E524EBF882008024C7 /* Main.storyboard */; };
+		7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */; };
+		7F6B96EA24EC0CB8008024C7 /* FinanceNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B96E924EC0CB8008024C7 /* FinanceNavigationController.swift */; };
 		7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CC24DDC030006F1824 /* AppDelegate.swift */; };
 		7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */; };
 		7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D024DDC030006F1824 /* StockViewController.swift */; };
-		7F91C4D424DDC030006F1824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D224DDC030006F1824 /* Main.storyboard */; };
+		7F91C4D424DDC030006F1824 /* Finance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D224DDC030006F1824 /* Finance.storyboard */; };
 		7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D524DDC030006F1824 /* FinanceApp.xcdatamodeld */; };
 		7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D824DDC033006F1824 /* Assets.xcassets */; };
 		7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */; };
@@ -26,11 +29,14 @@
 		3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69EA1524E70E3500ABB112 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = /Users/nulrybekkarshyga/Desktop/SwiftApplications/FinanceApp/FinanceApp/Nurlybek/APIHandler.swift; sourceTree = "<absolute>"; };
 		7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDetailViewController.swift; sourceTree = "<group>"; };
+		7F6B96E524EBF882008024C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		7F6B96E924EC0CB8008024C7 /* FinanceNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceNavigationController.swift; sourceTree = "<group>"; };
 		7F91C4C924DDC030006F1824 /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F91C4CC24DDC030006F1824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F91C4D024DDC030006F1824 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
-		7F91C4D324DDC030006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F91C4D324DDC030006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Finance.storyboard; sourceTree = "<group>"; };
 		7F91C4D624DDC030006F1824 /* FinanceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceApp.xcdatamodel; sourceTree = "<group>"; };
 		7F91C4D824DDC033006F1824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F91C4DB24DDC033006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,8 +83,10 @@
 			children = (
 				7F91C4CC24DDC030006F1824 /* AppDelegate.swift */,
 				7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */,
+				7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */,
+				7F69EA1524E70E3500ABB112 /* APIHandler.swift */,
 				7FABA75B24E707B900B853D4 /* Nurlybek */,
-				7F91C4D224DDC030006F1824 /* Main.storyboard */,
+				7F6B96E524EBF882008024C7 /* Main.storyboard */,
 				7F91C4D824DDC033006F1824 /* Assets.xcassets */,
 				7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */,
 				7F91C4DD24DDC033006F1824 /* Info.plist */,
@@ -91,11 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				7F91C4D024DDC030006F1824 /* StockViewController.swift */,
-				7F69EA1524E70E3500ABB112 /* APIHandler.swift */,
 				7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */,
 				7F91C4E524DDC32D006F1824 /* ViewModel.swift */,
 				7F91C4E724DDC586006F1824 /* Stock.swift */,
 				7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */,
+				7F91C4D224DDC030006F1824 /* Finance.storyboard */,
+				7F6B96E924EC0CB8008024C7 /* FinanceNavigationController.swift */,
 			);
 			path = Nurlybek;
 			sourceTree = "<group>";
@@ -178,8 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */,
+				7F6B96E624EBF882008024C7 /* Main.storyboard in Resources */,
 				7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */,
-				7F91C4D424DDC030006F1824 /* Main.storyboard in Resources */,
+				7F91C4D424DDC030006F1824 /* Finance.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +244,11 @@
 			files = (
 				7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */,
 				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
+				7F6B96EA24EC0CB8008024C7 /* FinanceNavigationController.swift in Sources */,
 				7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */,
 				7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */,
 				7F91C4E824DDC586006F1824 /* Stock.swift in Sources */,
+				7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
 				7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */,
 				7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */,
@@ -247,12 +259,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F91C4D224DDC030006F1824 /* Main.storyboard */ = {
+		7F91C4D224DDC030006F1824 /* Finance.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7F91C4D324DDC030006F1824 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Finance.storyboard;
 			sourceTree = "<group>";
 		};
 		7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */ = {

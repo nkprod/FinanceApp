@@ -15,6 +15,8 @@ class StockTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stockTextLabel: UILabel!
     
+    @IBOutlet weak var optionImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

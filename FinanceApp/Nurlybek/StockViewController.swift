@@ -31,19 +31,22 @@ class StockViewController: UIViewController,UITableViewDelegate {
             //print(self.model?.monthlyTimeSeries)
             //self.yahooTableView.reloadData()
         }
+        let logosForOptions = ["GOOGL": #imageLiteral(resourceName: "google_logo"),"AAPL": #imageLiteral(resourceName: "apple_log"), "SNE": #imageLiteral(resourceName: "sony_logo"), "AMZN": #imageLiteral(resourceName: "amazon_logo"), "MSFT": #imageLiteral(resourceName: "microsoft_logo")]
+        let namesForOptions = ["GOOGL": "Google","AAPL": "Apple", "SNE": "Sony", "AMZN": "Amazon", "MSFT":"Microsoft"]
         dataSource.bind(to: self.yahooTableView.rx.items) { (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! StockTableViewCell
-            cell.stockTextLabel?.text = element.metaData.the2Symbol
-//            cell.stockChartData = element.monthlyTimeSeries
+            cell.stockTextLabel?.text = namesForOptions[element.metaData.the2Symbol]
+            cell.optionImage.image = logosForOptions[element.metaData.the2Symbol] as! UIImage
             return cell
         }.disposed(by: disposeBag)
         
         yahooTableView.rx.modelSelected(Stock.self).subscribe(onNext: { item in
             print("SelectedItem: \(item.metaData.the2Symbol)")
-            let st = UIStoryboard.init(name: "Main", bundle: nil)
+            let st = UIStoryboard.init(name: "Finance", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "FinanceDetailViewController") as! FinanceDetailViewController
             vc.last_refreshed = item.metaData.the3LastRefreshed
             vc.symbol = item.metaData.the2Symbol
+            //vc.comapanyNameTextView.text = namesForOptions[item.metaData.the2Symbol]
             vc.stockChartData = item.monthlyTimeSeries as! [String : MonthlyTimeSery]
             self.navigationController?.pushViewController(vc, animated: true)
         }).disposed(by: disposeBag)
@@ -58,9 +61,9 @@ class StockViewController: UIViewController,UITableViewDelegate {
         // Do any additional setup after loading the view.
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 80
+//    }
     
 //    func getDataRx() -> Observable<[Stock]> {
 //        return Observable<[Stock]>.create { (observer) in
