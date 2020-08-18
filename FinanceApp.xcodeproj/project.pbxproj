@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1524E70E3500ABB112 /* APIHandler.swift */; };
 		7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */; };
 		7F6B96E624EBF882008024C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B96E524EBF882008024C7 /* Main.storyboard */; };
 		7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */; };
@@ -28,12 +27,12 @@
 		7FCA5A4A24EC221E00D92332 /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4324EC221E00D92332 /* Music.storyboard */; };
 		7FCA5A4B24EC221E00D92332 /* TrackResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */; };
 		7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */; };
+		7FCA5A4F24EC251B00D92332 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4E24EC251B00D92332 /* APIHandler.swift */; };
 		E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F69EA1524E70E3500ABB112 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = /Users/nulrybekkarshyga/Desktop/SwiftApplications/FinanceApp/FinanceApp/Nurlybek/APIHandler.swift; sourceTree = "<absolute>"; };
 		7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDetailViewController.swift; sourceTree = "<group>"; };
 		7F6B96E524EBF882008024C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		7FCA5A4324EC221E00D92332 /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackResultViewController.swift; sourceTree = "<group>"; };
 		7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		7FCA5A4E24EC251B00D92332 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,10 +95,10 @@
 			children = (
 				7F91C4CC24DDC030006F1824 /* AppDelegate.swift */,
 				7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */,
+				7FCA5A4E24EC251B00D92332 /* APIHandler.swift */,
 				7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */,
 				7FCA5A3F24EC221E00D92332 /* Music */,
-				7F69EA1524E70E3500ABB112 /* APIHandler.swift */,
-				7FABA75B24E707B900B853D4 /* Nurlybek */,
+				7FABA75B24E707B900B853D4 /* Stock */,
 				7F6B96E524EBF882008024C7 /* Main.storyboard */,
 				7F91C4D824DDC033006F1824 /* Assets.xcassets */,
 				7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */,
@@ -108,7 +108,7 @@
 			path = FinanceApp;
 			sourceTree = "<group>";
 		};
-		7FABA75B24E707B900B853D4 /* Nurlybek */ = {
+		7FABA75B24E707B900B853D4 /* Stock */ = {
 			isa = PBXGroup;
 			children = (
 				7F91C4D024DDC030006F1824 /* StockViewController.swift */,
@@ -119,7 +119,7 @@
 				7F91C4D224DDC030006F1824 /* Finance.storyboard */,
 				7F6B96E924EC0CB8008024C7 /* FinanceNavigationController.swift */,
 			);
-			path = Nurlybek;
+			path = Stock;
 			sourceTree = "<group>";
 		};
 		7FCA5A3F24EC221E00D92332 /* Music */ = {
@@ -280,10 +280,10 @@
 				7FCA5A4924EC221E00D92332 /* TrackInfo.swift in Sources */,
 				7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
-				7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */,
 				7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */,
 				7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */,
 				7FCA5A4824EC221E00D92332 /* MusicTableViewCell.swift in Sources */,
+				7FCA5A4F24EC251B00D92332 /* APIHandler.swift in Sources */,
 				7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

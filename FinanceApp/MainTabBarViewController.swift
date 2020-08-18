@@ -16,11 +16,11 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         // first tab
         let st1 = UIStoryboard(name: "Finance", bundle: nil)
         let tab1 = st1.instantiateViewController(withIdentifier: "FinanceNavigationController") as! FinanceNavigationController
-        let icon1 = UITabBarItem(title: "Stock", image: UIImage(named: "stock.png"), selectedImage: UIImage(named: "stock.png"))
+        let icon1 = UITabBarItem(title: "", image: UIImage(named: "stock.png"), selectedImage: UIImage(named: "stock.png"))
         // second tab
         let st2 = UIStoryboard(name: "Music", bundle: nil)
         let tab2 = st2.instantiateViewController(withIdentifier: "MusicSearchViewController") as! MusicSearchViewController
-        let icon2 = UITabBarItem(title: "Music", image: UIImage(named: "stock.png"), selectedImage: UIImage(named: "stock.png"))
+        let icon2 = UITabBarItem(title: "", image: UIImage(named: "music.png"), selectedImage: UIImage(named: "music.png"))
         tab2.tabBarItem = icon2
         tab1.tabBarItem = icon1
         let controllers = [tab1,tab2]  //array of the root view controllers displayed by the tab bar interface
