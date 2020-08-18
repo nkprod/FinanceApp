@@ -22,6 +22,12 @@
 		7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E524DDC32D006F1824 /* ViewModel.swift */; };
 		7F91C4E824DDC586006F1824 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E724DDC586006F1824 /* Stock.swift */; };
 		7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */; };
+		7FCA5A4724EC221E00D92332 /* MusicSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4024EC221E00D92332 /* MusicSearchViewController.swift */; };
+		7FCA5A4824EC221E00D92332 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4124EC221E00D92332 /* MusicTableViewCell.swift */; };
+		7FCA5A4924EC221E00D92332 /* TrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4224EC221E00D92332 /* TrackInfo.swift */; };
+		7FCA5A4A24EC221E00D92332 /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4324EC221E00D92332 /* Music.storyboard */; };
+		7FCA5A4B24EC221E00D92332 /* TrackResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */; };
+		7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */; };
 		E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +50,12 @@
 		7F91C4E524DDC32D006F1824 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7F91C4E724DDC586006F1824 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		7FCA5A4024EC221E00D92332 /* MusicSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchViewController.swift; sourceTree = "<group>"; };
+		7FCA5A4124EC221E00D92332 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		7FCA5A4224EC221E00D92332 /* TrackInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackInfo.swift; sourceTree = "<group>"; };
+		7FCA5A4324EC221E00D92332 /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
+		7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackResultViewController.swift; sourceTree = "<group>"; };
+		7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +96,7 @@
 				7F91C4CC24DDC030006F1824 /* AppDelegate.swift */,
 				7F91C4CE24DDC030006F1824 /* SceneDelegate.swift */,
 				7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */,
+				7FCA5A3F24EC221E00D92332 /* Music */,
 				7F69EA1524E70E3500ABB112 /* APIHandler.swift */,
 				7FABA75B24E707B900B853D4 /* Nurlybek */,
 				7F6B96E524EBF882008024C7 /* Main.storyboard */,
@@ -107,6 +120,19 @@
 				7F6B96E924EC0CB8008024C7 /* FinanceNavigationController.swift */,
 			);
 			path = Nurlybek;
+			sourceTree = "<group>";
+		};
+		7FCA5A3F24EC221E00D92332 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				7FCA5A4024EC221E00D92332 /* MusicSearchViewController.swift */,
+				7FCA5A4124EC221E00D92332 /* MusicTableViewCell.swift */,
+				7FCA5A4224EC221E00D92332 /* TrackInfo.swift */,
+				7FCA5A4324EC221E00D92332 /* Music.storyboard */,
+				7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */,
+				7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		908DE7DEB5A1FEFE4DE3DECB /* Pods */ = {
@@ -187,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */,
+				7FCA5A4A24EC221E00D92332 /* Music.storyboard in Resources */,
 				7F6B96E624EBF882008024C7 /* Main.storyboard in Resources */,
 				7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */,
 				7F91C4D424DDC030006F1824 /* Finance.storyboard in Resources */,
@@ -246,12 +273,17 @@
 				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
 				7F6B96EA24EC0CB8008024C7 /* FinanceNavigationController.swift in Sources */,
 				7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */,
+				7FCA5A4724EC221E00D92332 /* MusicSearchViewController.swift in Sources */,
 				7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */,
+				7FCA5A4B24EC221E00D92332 /* TrackResultViewController.swift in Sources */,
 				7F91C4E824DDC586006F1824 /* Stock.swift in Sources */,
+				7FCA5A4924EC221E00D92332 /* TrackInfo.swift in Sources */,
 				7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
 				7F69EA1624E70E3500ABB112 /* APIHandler.swift in Sources */,
+				7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */,
 				7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */,
+				7FCA5A4824EC221E00D92332 /* MusicTableViewCell.swift in Sources */,
 				7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

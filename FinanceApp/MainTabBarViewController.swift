@@ -13,11 +13,17 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-        let st = UIStoryboard(name: "Finance", bundle: nil)
-        let item1 = st.instantiateViewController(withIdentifier: "FinanceNavigationController") as! FinanceNavigationController
+        // first tab
+        let st1 = UIStoryboard(name: "Finance", bundle: nil)
+        let tab1 = st1.instantiateViewController(withIdentifier: "FinanceNavigationController") as! FinanceNavigationController
         let icon1 = UITabBarItem(title: "Stock", image: UIImage(named: "stock.png"), selectedImage: UIImage(named: "stock.png"))
-        item1.tabBarItem = icon1
-        let controllers = [item1]  //array of the root view controllers displayed by the tab bar interface
+        // second tab
+        let st2 = UIStoryboard(name: "Music", bundle: nil)
+        let tab2 = st2.instantiateViewController(withIdentifier: "MusicSearchViewController") as! MusicSearchViewController
+        let icon2 = UITabBarItem(title: "Music", image: UIImage(named: "stock.png"), selectedImage: UIImage(named: "stock.png"))
+        tab2.tabBarItem = icon2
+        tab1.tabBarItem = icon1
+        let controllers = [tab1,tab2]  //array of the root view controllers displayed by the tab bar interface
         self.viewControllers = controllers
         
     }
