@@ -28,6 +28,12 @@
 		7FCA5A4B24EC221E00D92332 /* TrackResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */; };
 		7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */; };
 		7FCA5A4F24EC251B00D92332 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4E24EC251B00D92332 /* APIHandler.swift */; };
+		7FCA5AF224F4CB3000D92332 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AED24F4CB3000D92332 /* MyCell.swift */; };
+		7FCA5AF324F4CB3000D92332 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AEE24F4CB3000D92332 /* MovieViewController.swift */; };
+		7FCA5AF424F4CB3000D92332 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AEF24F4CB3000D92332 /* MovieInfo.swift */; };
+		7FCA5AF524F4CB3000D92332 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AF024F4CB3000D92332 /* MovieViewModel.swift */; };
+		7FCA5AF624F4CB3000D92332 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5AF124F4CB3000D92332 /* Movie.storyboard */; };
+		7FCA5B0024F4CEE800D92332 /* MovieNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */; };
 		E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		7FCA5A4424EC221E00D92332 /* TrackResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackResultViewController.swift; sourceTree = "<group>"; };
 		7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		7FCA5A4E24EC251B00D92332 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		7FCA5AED24F4CB3000D92332 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		7FCA5AEE24F4CB3000D92332 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		7FCA5AEF24F4CB3000D92332 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		7FCA5AF024F4CB3000D92332 /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		7FCA5AF124F4CB3000D92332 /* Movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNavigationController.swift; sourceTree = "<group>"; };
 		8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,8 +111,9 @@
 				7F6B96E724EBF946008024C7 /* MainTabBarViewController.swift */,
 				7FCA5A3F24EC221E00D92332 /* Music */,
 				7FABA75B24E707B900B853D4 /* Stock */,
-				7F6B96E524EBF882008024C7 /* Main.storyboard */,
+				7FCA5AEC24F4CB3000D92332 /* Movie */,
 				7F91C4D824DDC033006F1824 /* Assets.xcassets */,
+				7F6B96E524EBF882008024C7 /* Main.storyboard */,
 				7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */,
 				7F91C4DD24DDC033006F1824 /* Info.plist */,
 				7F91C4D524DDC030006F1824 /* FinanceApp.xcdatamodeld */,
@@ -133,6 +146,19 @@
 				7FCA5A4524EC221E00D92332 /* MusicViewModel.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		7FCA5AEC24F4CB3000D92332 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				7FCA5AED24F4CB3000D92332 /* MyCell.swift */,
+				7FCA5AEE24F4CB3000D92332 /* MovieViewController.swift */,
+				7FCA5AEF24F4CB3000D92332 /* MovieInfo.swift */,
+				7FCA5AF024F4CB3000D92332 /* MovieViewModel.swift */,
+				7FCA5AF124F4CB3000D92332 /* Movie.storyboard */,
+				7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		908DE7DEB5A1FEFE4DE3DECB /* Pods */ = {
@@ -186,6 +212,7 @@
 				TargetAttributes = {
 					7F91C4C824DDC030006F1824 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -213,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */,
+				7FCA5AF624F4CB3000D92332 /* Movie.storyboard in Resources */,
 				7FCA5A4A24EC221E00D92332 /* Music.storyboard in Resources */,
 				7F6B96E624EBF882008024C7 /* Main.storyboard in Resources */,
 				7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */,
@@ -270,13 +298,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */,
+				7FCA5AF424F4CB3000D92332 /* MovieInfo.swift in Sources */,
 				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
 				7F6B96EA24EC0CB8008024C7 /* FinanceNavigationController.swift in Sources */,
+				7FCA5AF224F4CB3000D92332 /* MyCell.swift in Sources */,
 				7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */,
+				7FCA5AF324F4CB3000D92332 /* MovieViewController.swift in Sources */,
 				7FCA5A4724EC221E00D92332 /* MusicSearchViewController.swift in Sources */,
+				7FCA5B0024F4CEE800D92332 /* MovieNavigationController.swift in Sources */,
 				7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */,
 				7FCA5A4B24EC221E00D92332 /* TrackResultViewController.swift in Sources */,
 				7F91C4E824DDC586006F1824 /* Stock.swift in Sources */,
+				7FCA5AF524F4CB3000D92332 /* MovieViewModel.swift in Sources */,
 				7FCA5A4924EC221E00D92332 /* TrackInfo.swift in Sources */,
 				7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
@@ -429,6 +462,7 @@
 			baseConfigurationReference = C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82K5B964E4;
 				INFOPLIST_FILE = FinanceApp/Info.plist;
@@ -438,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karshiganurlybek.FinanceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +483,7 @@
 			baseConfigurationReference = 8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82K5B964E4;
 				INFOPLIST_FILE = FinanceApp/Info.plist;

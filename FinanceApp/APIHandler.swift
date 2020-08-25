@@ -69,4 +69,25 @@ class APIHandler {
             return disposal
         }
     }
+    
+    public func callAPIFromApiHandler(withUrlString : String)
+        -> Observable<Data?> {
+            
+            Observable<Data?>.create { observer  in
+                
+                URLSession.shared.dataTask(with: URL(string: withUrlString)!) { (data, response, error) in
+                    print(data)
+                    print(response)
+                    observer.onNext(data)
+                    if error != nil {
+                        observer.onError(error!)
+                    }
+                    observer.onCompleted()
+                    
+                }.resume()
+                let disposable = Disposables.create()
+                return disposable
+                
+            }
+    }
 }

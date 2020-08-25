@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pci1ArYW7oJ2eyTo2NMYEKHHiCP-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pci1ArYW7oJ2eyTo2NMYEKHHiCP-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

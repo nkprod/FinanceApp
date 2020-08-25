@@ -21,9 +21,14 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         let st2 = UIStoryboard(name: "Music", bundle: nil)
         let tab2 = st2.instantiateViewController(withIdentifier: "MusicSearchViewController") as! MusicSearchViewController
         let icon2 = UITabBarItem(title: "", image: UIImage(named: "music.png"), selectedImage: UIImage(named: "music.png"))
+        // third tab
+        let st3 = UIStoryboard(name: "Movie", bundle: nil)
+        let tab3 = st3.instantiateViewController(withIdentifier: "MovieNavigationController") as! MovieNavigationController
+        let icon3 = UITabBarItem(title: "", image: UIImage(named: "movie.png"), selectedImage: UIImage(named: "movie.png"))
+        tab3.tabBarItem = icon3
         tab2.tabBarItem = icon2
         tab1.tabBarItem = icon1
-        let controllers = [tab1,tab2]  //array of the root view controllers displayed by the tab bar interface
+        let controllers = [tab1,tab2,tab3]  //array of the root view controllers displayed by the tab bar interface
         self.viewControllers = controllers
         
     }
