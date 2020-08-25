@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class ViewModel {
+class StockViewModel {
     var closure: ((_: [Stock]?)->())?
     
     var apiHandler = APIHandler.init()
@@ -21,7 +21,7 @@ class ViewModel {
     
     func getDataRx() {
 
-        apiHandler.getDataRx().subscribe(onNext: { (arrPostInfo) in
+        apiHandler.financeHandler().subscribe(onNext: { (arrPostInfo) in
             let result = arrPostInfo
             self.closure?(result)
         }, onError: { (error) in

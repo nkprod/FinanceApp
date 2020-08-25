@@ -18,7 +18,7 @@
 		7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4D524DDC030006F1824 /* FinanceApp.xcdatamodeld */; };
 		7F91C4D924DDC033006F1824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4D824DDC033006F1824 /* Assets.xcassets */; };
 		7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */; };
-		7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E524DDC32D006F1824 /* ViewModel.swift */; };
+		7F91C4E624DDC32D006F1824 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E524DDC32D006F1824 /* StockViewModel.swift */; };
 		7F91C4E824DDC586006F1824 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91C4E724DDC586006F1824 /* Stock.swift */; };
 		7FABA75A24E6BF5600B853D4 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */; };
 		7FCA5A4724EC221E00D92332 /* MusicSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5A4024EC221E00D92332 /* MusicSearchViewController.swift */; };
@@ -34,6 +34,13 @@
 		7FCA5AF524F4CB3000D92332 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AF024F4CB3000D92332 /* MovieViewModel.swift */; };
 		7FCA5AF624F4CB3000D92332 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5AF124F4CB3000D92332 /* Movie.storyboard */; };
 		7FCA5B0024F4CEE800D92332 /* MovieNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */; };
+		7FCA5B0824F559B000D92332 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0224F559B000D92332 /* WeatherViewController.swift */; };
+		7FCA5B0924F559B000D92332 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0324F559B000D92332 /* WeatherViewModel.swift */; };
+		7FCA5B0A24F559B000D92332 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0424F559B000D92332 /* giphy.gif */; };
+		7FCA5B0B24F559B000D92332 /* iOSDevCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0524F559B000D92332 /* iOSDevCenter.swift */; };
+		7FCA5B0C24F559B000D92332 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0624F559B000D92332 /* Weather.storyboard */; };
+		7FCA5B0D24F559B000D92332 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0724F559B000D92332 /* CurrentWeatherModel.swift */; };
+		7FCA5B0F24F559E700D92332 /* WeatherNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5B0E24F559E700D92332 /* WeatherNavigationController.swift */; };
 		E0E687B59CB6639764444964 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5154EE46AD69EBA0329F84 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +59,7 @@
 		7F91C4D824DDC033006F1824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F91C4DB24DDC033006F1824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F91C4DD24DDC033006F1824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F91C4E524DDC32D006F1824 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7F91C4E524DDC32D006F1824 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		7F91C4E724DDC586006F1824 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		7FCA5A4024EC221E00D92332 /* MusicSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +75,13 @@
 		7FCA5AF024F4CB3000D92332 /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		7FCA5AF124F4CB3000D92332 /* Movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
 		7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNavigationController.swift; sourceTree = "<group>"; };
+		7FCA5B0224F559B000D92332 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		7FCA5B0324F559B000D92332 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		7FCA5B0424F559B000D92332 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		7FCA5B0524F559B000D92332 /* iOSDevCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDevCenter.swift; sourceTree = "<group>"; };
+		7FCA5B0624F559B000D92332 /* Weather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		7FCA5B0724F559B000D92332 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
+		7FCA5B0E24F559E700D92332 /* WeatherNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNavigationController.swift; sourceTree = "<group>"; };
 		8F854FD96B9BD04146C64B56 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		C6BBCFF61D24C36059738443 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +128,7 @@
 				7FCA5AEC24F4CB3000D92332 /* Movie */,
 				7F91C4D824DDC033006F1824 /* Assets.xcassets */,
 				7F6B96E524EBF882008024C7 /* Main.storyboard */,
+				7FCA5B0124F559B000D92332 /* Weather */,
 				7F91C4DA24DDC033006F1824 /* LaunchScreen.storyboard */,
 				7F91C4DD24DDC033006F1824 /* Info.plist */,
 				7F91C4D524DDC030006F1824 /* FinanceApp.xcdatamodeld */,
@@ -126,7 +141,7 @@
 			children = (
 				7F91C4D024DDC030006F1824 /* StockViewController.swift */,
 				7FABA75924E6BF5600B853D4 /* StockTableViewCell.swift */,
-				7F91C4E524DDC32D006F1824 /* ViewModel.swift */,
+				7F91C4E524DDC32D006F1824 /* StockViewModel.swift */,
 				7F91C4E724DDC586006F1824 /* Stock.swift */,
 				7F69EA1724E72B0300ABB112 /* FinanceDetailViewController.swift */,
 				7F91C4D224DDC030006F1824 /* Finance.storyboard */,
@@ -159,6 +174,20 @@
 				7FCA5AFF24F4CEE800D92332 /* MovieNavigationController.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		7FCA5B0124F559B000D92332 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				7FCA5B0224F559B000D92332 /* WeatherViewController.swift */,
+				7FCA5B0324F559B000D92332 /* WeatherViewModel.swift */,
+				7FCA5B0424F559B000D92332 /* giphy.gif */,
+				7FCA5B0524F559B000D92332 /* iOSDevCenter.swift */,
+				7FCA5B0624F559B000D92332 /* Weather.storyboard */,
+				7FCA5B0724F559B000D92332 /* CurrentWeatherModel.swift */,
+				7FCA5B0E24F559E700D92332 /* WeatherNavigationController.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		908DE7DEB5A1FEFE4DE3DECB /* Pods */ = {
@@ -239,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCA5B0A24F559B000D92332 /* giphy.gif in Resources */,
+				7FCA5B0C24F559B000D92332 /* Weather.storyboard in Resources */,
 				7F91C4DC24DDC033006F1824 /* LaunchScreen.storyboard in Resources */,
 				7FCA5AF624F4CB3000D92332 /* Movie.storyboard in Resources */,
 				7FCA5A4A24EC221E00D92332 /* Music.storyboard in Resources */,
@@ -297,11 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCA5B0B24F559B000D92332 /* iOSDevCenter.swift in Sources */,
 				7F91C4D724DDC030006F1824 /* FinanceApp.xcdatamodeld in Sources */,
+				7FCA5B0D24F559B000D92332 /* CurrentWeatherModel.swift in Sources */,
 				7FCA5AF424F4CB3000D92332 /* MovieInfo.swift in Sources */,
 				7F91C4D124DDC030006F1824 /* StockViewController.swift in Sources */,
 				7F6B96EA24EC0CB8008024C7 /* FinanceNavigationController.swift in Sources */,
 				7FCA5AF224F4CB3000D92332 /* MyCell.swift in Sources */,
+				7FCA5B0924F559B000D92332 /* WeatherViewModel.swift in Sources */,
 				7F69EA1824E72B0300ABB112 /* FinanceDetailViewController.swift in Sources */,
 				7FCA5AF324F4CB3000D92332 /* MovieViewController.swift in Sources */,
 				7FCA5A4724EC221E00D92332 /* MusicSearchViewController.swift in Sources */,
@@ -312,12 +346,14 @@
 				7FCA5AF524F4CB3000D92332 /* MovieViewModel.swift in Sources */,
 				7FCA5A4924EC221E00D92332 /* TrackInfo.swift in Sources */,
 				7F6B96E824EBF946008024C7 /* MainTabBarViewController.swift in Sources */,
+				7FCA5B0F24F559E700D92332 /* WeatherNavigationController.swift in Sources */,
 				7F91C4CD24DDC030006F1824 /* AppDelegate.swift in Sources */,
 				7FCA5A4C24EC221E00D92332 /* MusicViewModel.swift in Sources */,
-				7F91C4E624DDC32D006F1824 /* ViewModel.swift in Sources */,
+				7F91C4E624DDC32D006F1824 /* StockViewModel.swift in Sources */,
 				7FCA5A4824EC221E00D92332 /* MusicTableViewCell.swift in Sources */,
 				7FCA5A4F24EC251B00D92332 /* APIHandler.swift in Sources */,
 				7F91C4CF24DDC030006F1824 /* SceneDelegate.swift in Sources */,
+				7FCA5B0824F559B000D92332 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

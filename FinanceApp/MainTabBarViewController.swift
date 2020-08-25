@@ -25,10 +25,15 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         let st3 = UIStoryboard(name: "Movie", bundle: nil)
         let tab3 = st3.instantiateViewController(withIdentifier: "MovieNavigationController") as! MovieNavigationController
         let icon3 = UITabBarItem(title: "", image: UIImage(named: "movie.png"), selectedImage: UIImage(named: "movie.png"))
+        // fourth tab
+        let st4 = UIStoryboard(name: "Weather", bundle: nil)
+        let tab4 = st4.instantiateViewController(withIdentifier: "WeatherNavigationController") as! WeatherNavigationController
+        let icon4 = UITabBarItem(title: "", image: UIImage(named: "weather.png"), selectedImage: UIImage(named: "weather.png"))
+        tab4.tabBarItem = icon4
         tab3.tabBarItem = icon3
         tab2.tabBarItem = icon2
         tab1.tabBarItem = icon1
-        let controllers = [tab1,tab2,tab3]  //array of the root view controllers displayed by the tab bar interface
+        let controllers = [tab1,tab2,tab3,tab4]  //array of the root view controllers displayed by the tab bar interface
         self.viewControllers = controllers
         
     }

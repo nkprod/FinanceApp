@@ -13,7 +13,7 @@ class MusicViewModel {
     let datasource: BehaviorRelay<[Item]> = BehaviorRelay(value: [])
     let disposalBag = DisposeBag()
     func callAPI(urlString: String) {
-        APIHandler.init().MusicHandle(urlString: urlString).subscribe(onNext: ({data in
+        APIHandler.init().musicHandler(urlString: urlString).subscribe(onNext: ({data in
             let model = try! JSONDecoder.init().decode([Item].self, from: data!)
             self.datasource.accept(model)
         }), onError: ({ error in

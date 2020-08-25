@@ -17,7 +17,7 @@ class MovieViewModel{
     
     public func callAPIFromViewModel(withUrlString : String) {
         var apiHandler = APIHandler.init()
-        let disposable = apiHandler.callAPIFromApiHandler(withUrlString : withUrlString).subscribe(onNext: { (data) in
+        let disposable = apiHandler.movieHandler(withUrlString : withUrlString).subscribe(onNext: { (data) in
             
             let jsonDcoderObj = JSONDecoder.init()
             

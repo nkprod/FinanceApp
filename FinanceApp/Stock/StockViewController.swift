@@ -14,7 +14,7 @@ class StockViewController: UIViewController,UITableViewDelegate {
     let dataSource: BehaviorRelay<[Stock]> = BehaviorRelay(value: [])
     let disposeBag = DisposeBag()
     
-    var vm = ViewModel.init()
+    var vm = StockViewModel.init()
     var model: [Stock]?
     var arrangeDate: [[String]]?
     @IBOutlet weak var yahooTableView: UITableView!

@@ -11,7 +11,7 @@ import RxCocoa
 
 class APIHandler {
     var closure: ((Data?, URLResponse?, Error?)->())?
-    func getDataRx() -> Observable<[Stock]> {
+    func financeHandler() -> Observable<[Stock]> {
         return Observable<[Stock]>.create { (observer) in
             var results = [Stock]()
             let companies = ["AAPL","MSFT","AMZN","SNE","GOOGL"]
@@ -39,7 +39,7 @@ class APIHandler {
     
     let token = "BQCq8CWj6-1OXkG3YX2LZ_LwhAjcVKx7cFYM1Oflqy4x50cEk5_2kCFqyx6Lo0PpOU7_fVhMyMeqrQbaNETUGcdWSFJK1_jpgypEf5gE3rNeCstfr1shX-sBtQ_q9KhTSz_rvObxLTV6EIATSbZaTMcVSllruIE"
     
-    func MusicHandle(urlString: String)->Observable<Data?> {
+    func musicHandler(urlString: String)->Observable<Data?> {
         Observable<Data?>.create{(observer) in
             var semaphore = DispatchSemaphore (value: 0)
             var request = URLRequest(url: URL(string: urlString)!,timeoutInterval: Double.infinity)
@@ -70,7 +70,7 @@ class APIHandler {
         }
     }
     
-    public func callAPIFromApiHandler(withUrlString : String)
+    public func movieHandler(withUrlString : String)
         -> Observable<Data?> {
             
             Observable<Data?>.create { observer  in
@@ -87,7 +87,22 @@ class APIHandler {
                 }.resume()
                 let disposable = Disposables.create()
                 return disposable
-                
             }
     }
+    
+    public func weatherHandler(withUrlString: String) -> Observable<Data?>{
+        Observable<Data?>.create { (observer) -> Disposable in
+            URLSession.shared.dataTask(with: URL(string: withUrlString)!){
+                (data, response, error) in
+                observer.onNext(data)
+                if error != nil{
+                    observer.onError(error!)
+                }
+                observer.onCompleted()
+            }.resume()
+            let disposable = Disposables.create()
+            return disposable
+        }
+    }
+
 }
